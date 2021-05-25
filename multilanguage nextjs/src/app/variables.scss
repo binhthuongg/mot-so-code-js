@@ -1,0 +1,20 @@
+$mainColor: #2d9cdb;
+$backgroundColor: #000000;
+$textColor: #fff;
+$fontSize: 30px;
+$scrollBarColor: #828282;
+$scrollBarThumb: #f2994a;
+$scrollBarThumbHover: #f2994a;
+$scrollbarWidth: 10px;
+$scrollbarRadius: 100px;
+
+@mixin clearfix() {
+    &:after {
+        clear: both;
+        content: '';
+        display: block;
+        height: 0;
+        line-height: 0;
+        visibility: hidden;
+    }
+}

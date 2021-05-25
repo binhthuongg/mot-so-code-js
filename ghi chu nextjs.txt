@@ -1,0 +1,3 @@
+Next JS: 
+
+Redux toolkit được thêm ở page/_app

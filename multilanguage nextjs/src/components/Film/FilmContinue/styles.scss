@@ -1,0 +1,31 @@
+.FilmCategoryWrapper {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    .listCategory {
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+        .categoryName {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+    }
+    .listFilm {
+        white-space: nowrap;
+        overflow-x: auto;
+        .item {
+            display: inline-block;
+            a {
+                display: block;
+                border: 10px solid transparent;
+                &:not(:last-child) {
+                    margin-right: 0;
+                }
+                &:hover {
+                    border-color: white;
+                }
+            }
+        }
+    }
+}

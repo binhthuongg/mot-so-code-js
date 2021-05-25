@@ -1,0 +1,16 @@
+.TruyenHinhWrapper {
+    .listTruyenHinh {
+        margin-top: 15%;
+        ul {
+            text-align: center;
+            li {
+                border-radius: 10px;
+                overflow: hidden;
+                display: inline-block;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                vertical-align: middle;
+            }
+        }
+    }
+}

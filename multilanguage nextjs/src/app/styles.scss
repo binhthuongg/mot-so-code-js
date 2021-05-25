@@ -1,0 +1,87 @@
+@import './variables.scss';
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    font-weight: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    outline: none;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 20px;
+    white-space: nowrap;
+    text-align: center;
+    min-width: 265px;
+    cursor: pointer;
+    color: #fff;
+    &:hover {
+        color: #fff;
+        background: darken($mainColor, 10%);
+        a {
+            color: #fff;
+        }
+    }
+    a {
+        color: inherit;
+    }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+img {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+}
+* {
+    scrollbar-color: $scrollBarThumb $scrollBarColor;
+    scrollbar-width: thin;
+}
+a:hover {
+    color: $mainColor;
+}
+button {
+    background-color: $mainColor;
+    color: #fff;
+    font-size: $fontSize;
+}
+::-webkit-scrollbar {
+    width: $scrollbarWidth;
+}
+::-webkit-scrollbar-track {
+    background: $scrollBarColor;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $scrollBarThumb;
+    borderradius: $scrollbarRadius;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $scrollBarThumbHover;
+}
+.appWrapper {
+    overflow: auto;
+    height: 100vh;
+    background-color: $backgroundColor;
+    color: $textColor;
+    font-size: $fontSize;
+}
